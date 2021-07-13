@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <table>
+                          <tr>
+                            <th data-tab-target-graphs="#histo-graph" class="activeLine tcontent">1. Age vs NJP</th>
+                          </tr>
+                          <tr>
+                            <th data-tab-target-graphs="#item-2" class="tcontent">2. Age vs NJP</th>
+                          </tr>
+                          <tr>
+                            <th data-tab-target-graphs="#item-3" class="tcontent">3. Age vs NJP</th>
+                          </tr>
+                          <tr>
+                            <th data-tab-target-graphs="#item-4" class="tcontent">4. Age vs NJP</th>
+                          </tr>
+                          <tr>
+                            <th data-tab-target-graphs="#item-5" class="tcontent">5. Age vs NJP</th>
+                          </tr>
+                          <tr>
+                            <th data-tab-target-graphs="#item-6" class="tcontent">6. Age vs NJP</th>
+                          </tr>
+                        </table>
+                    </div>
+                      <div class="line-graph-content" id="item 2">
+                        <div class="tab-content-line-graphs">
+                          <div  id="item-1" data-tab-content-line class="activeLine">
+                              first box <br>
+                              {% if graph1 %}
+                                          <img src="data:img/png;base64 , {{graph1|safe}} " alt="graph1" width="350" height="350">
+                              {% else %}
+                                          <b>NO GRAPHS to display</b>
+                              {% endif %}<br>
+                              Age vs NJP
+                          </div>
+                          <div  id="item-2" data-tab-content-line>
+                              Second box <br>
+                              {% if graph2 %}
+                                          <img src="data:img/png;base64 , {{graph2|safe}} " alt="graph2" width="350" height="350">
+                              {% else %}
+                                          <b>NO GRAPHS to display</b>
+                              {% endif %}<br>
+                              Age vs NAS
+                          </div>
+                          <div  id="item-3" data-tab-content-line>
+                              third box<br>
+                              {% if graph3 %}
+                                          <img src="data:img/png;base64 , {{graph3|safe}} " alt="graph3" width="350" height="350">
+                              {% else %}
+                                          <b>NO GRAPHS to display</b>
+                              {% endif %}<br>
+                              Age vs Location
+                          </div>
+                          <div  id="item-4" data-tab-content-line>
+                              fourth box<br>
+                              {% if graph4 %}
+                                          <img src="data:img/png;base64 , {{graph4|safe}} " alt="graph4" width="350" height="350">
+                              {% else %}
+                                          <b>NO GRAPHS to display</b>
+                              {% endif %}<br>
+                              NAS vs NJP
+                          </div>
+                          <div  id="item-5" data-tab-content-line>
+                              fifth box<br>
+                              {% if graph5 %}
+                                          <img src="data:img/png;base64 , {{graph5|safe}} " alt="graph5" width="350" height="350">
+                              {% else %}
+                                          <b>NO GRAPHS to display</b>
+                              {% endif %}<br>
+                              Location vs NAS
+                          </div>
+                          <div id="item-6" data-tab-content-line>
+                              sixth box<br>
+                              {% if graph6 %}
+                                          <img src="data:img/png;base64 , {{graph6|safe}} " alt="graph6" width="350" height="350">
+                              {% else %}
+                                          <b>NO GRAPHS to display</b>
+                              {% endif %}<br>
+                              NJP vs Location
+                          </div>
+  </body>
+</html>
